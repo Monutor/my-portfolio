@@ -5,3 +5,7 @@
 
 node_modules/
 app/css/
+
+package.json
+package-lock.json
+gulpfile.js
