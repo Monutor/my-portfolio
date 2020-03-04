@@ -26,7 +26,9 @@ gulp.task('script', function(){
     'node_modules/rateyo/src/jquery.rateyo.js',
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/@fortawesome/fontawesome-free/js/all.min.js',
-    'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js'
+    'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(iglify())
@@ -39,7 +41,8 @@ gulp.task('style', function(){
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/rateyo/src/jquery.rateyo.css',
     'node_modules/@fortawesome/fontawesome-free/css/all.min.css',
-    'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
+    'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
+    'node_modules/bootstrap/dist/css/bootstrap.css'
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -61,8 +64,7 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: "app/",
     },
-    host: "192.168.2.102", 
-    online: true
+    host: "192.168.2.102"
   })
 });
 
