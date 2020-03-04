@@ -5,36 +5,45 @@
   background-color: #f5f5f5;
   border-top: 10px solid #778492;
   padding: 30px 0;
+
   &__logo {
     display: flex;
+
     &-img {
       align-self: center;
+
       img {
         width: 100px;
       }
     }
   }
+
   .logo-text {
     margin-left: 15px;
+
     &__title {
       font-size: 38px;
       font-weight: 700;
       color: #49515a;
     }
+
     &__desc {
-      color:#778492;
+      color: #778492;
       font-size: 24px;
       font-weight: 400;
       margin-bottom: 10px;
     }
+
     &__social {
       display: flex;
       flex-wrap: wrap;
+
       li {
-        & + li {
+        &+li {
           margin-left: 5px;
         }
       }
+
       &-link {
         background-color: #b0b7bf;
         width: 36px;
@@ -46,16 +55,19 @@
         font-size: 20px;
         color: #fff;
         transition: all .3s;
+
         &:hover {
           background-color: darken(#b0b7bf, 10%);
         }
       }
     }
   }
+
   &__button {
     .btn-success {
       padding-left: 30px;
       position: relative;
+
       &::before {
         content: "\f086";
         font-family: "FontAwesome";
@@ -72,12 +84,14 @@
 
 .project {
   &__item {
-    & + .project__item {
+    &+.project__item {
       margin-top: 20px;
     }
+
     &-title {
       padding-bottom: 10px;
     }
+
     &-button {
       text-align: right;
       margin-top: 10px;
@@ -90,23 +104,28 @@
     padding-bottom: 15px;
     padding-left: 30px;
     position: relative;
-      &::before {
-        content: '\f0ad';
-        position: absolute;
-        left: 0;
-        font-family: "FontAwesome";
-      }
+
+    &::before {
+      content: '\f0ad';
+      position: absolute;
+      left: 0;
+      font-family: "FontAwesome";
+    }
   }
+
   &__desc {
     padding-bottom: 20px;
   }
+
   &__list {
     li {
       padding-left: 25px;
       position: relative;
-      & + li {
+
+      &+li {
         margin-top: 10px;
       }
+
       &::before {
         position: absolute;
         content: "—";
@@ -114,11 +133,13 @@
       }
     }
   }
+
   .card {
     .btn-link {
       text-decoration: none;
       padding-left: 20px;
       position: relative;
+
       &::before {
         content: '\f0ad';
         position: absolute;
@@ -134,13 +155,16 @@
   &__title {
     padding-bottom: 10px;
   }
+
   &__desc {
     margin-bottom: 20px;
   }
+
   &__item {
-    & + .skills__item {
+    &+.skills__item {
       margin-top: 20px;
     }
+
     &-heading {
       padding-bottom: 5px;
       color: #778492;
@@ -153,13 +177,16 @@
   &__title {
     padding-bottom: 10px;
   }
+
   &__list {
     li {
-      & + li {
+      gul &+li {
         margin-top: 15px;
       }
+
       padding-left: 25px;
       position: relative;
+
       &::before {
         position: absolute;
         content: "—";
@@ -172,6 +199,7 @@
 .footer {
   background: #32383e;
   padding: 10px 0;
+
   &__copyright {
     color: #a1aab4;
     font-size: 14px;

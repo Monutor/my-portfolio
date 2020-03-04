@@ -20,6 +20,7 @@ $('.planned__title').click(function () {
 
 $('#myModal').modal({
   backdrop: true,
+  1
   show: true,
   keyboard: true
 })
